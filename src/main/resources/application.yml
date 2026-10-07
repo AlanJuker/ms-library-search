@@ -14,9 +14,9 @@ spring:
   application:
     name: microservice
   datasource:
-    url: jdbc:mysql://roundhouse.proxy.rlwy.net:37965/railway
-    username: root
-    password: eGAgdAFCD5AGCcf-fG4F61B1d5bBG2cE
+    url: ${DB_URL:jdbc:mysql://localhost:3306/ms-library}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
     driver-class-name: com.mysql.cj.jdbc.Driver
     jpa:
       show-sql: true
